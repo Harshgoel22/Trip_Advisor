@@ -1,0 +1,296 @@
+body{
+  overflow-x: hidden;
+}
+.header{
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+nav{
+  display: flex;
+  align-items: center;
+  padding: 3% 2%;
+}
+
+nav img{
+  height: 100px;
+  width: 100px;
+  margin:8px 30px;
+}
+
+nav span{
+  font-size: 70px;
+  margin-left: 5px;
+}
+
+nav ul{
+  text-align: right;
+  display: inline;
+  list-style: none;
+  flex:1;
+}
+
+nav ul li{
+  display: inline-flex;
+  margin: 30px 26px;
+}
+
+nav li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li a:hover{
+  background: #fff;
+  color: black;
+}
+
+span{
+  margin: 5px 5px;
+}
+
+.main-text{
+  margin-top: 8%;
+  text-align: center;
+}
+
+.Mtext{
+  color: #fff;
+  font-size: 65px;
+}
+
+.main-text .button{
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 2% auto;
+  padding: 3px;
+  display: inline-block;
+}
+
+.button:hover{
+  background-color: #fff;
+  color: black;
+}
+
+.bot-img{
+  width: 250%;
+  height: 100px;
+  bottom: 0;
+  margin: 190px 0 0 0;
+  padding: 0;
+  animation: animate 8s linear infinite;
+  position: absolute;
+  opacity: 0.4;
+}
+@keyframes animate {
+  0%{
+    left:0;
+  }
+  100%{
+    left:-1200px;
+  }
+}
+
+.feat{
+  margin: 60px 110px;
+  padding: 10px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.feat h3{
+  color: #73777B;
+}
+
+.feat p{
+  text-shadow: 2px 4px 8px;
+  color: #413F42;
+}
+
+.icon{
+  font-size: 70px;
+  animation: anima 4s infinite;
+}
+
+@keyframes anima {
+  0%{
+    color:black;
+  }
+  19%{
+    color: #2B2B2B;
+  }
+  38%{
+    color: #423F3E;
+  }
+  70%{
+    color: #73777B;
+  }
+  85%{
+    color: #423F3E;
+  }
+  95%{
+    color: #2B2B2B;
+  }
+}
+
+.pack{
+  color: #fff;
+  line-height: 25px;
+  margin: 20% 5%;
+}
+
+.pack-img{
+  height: 300px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  color: #fff;
+  left: 4%;
+  top: 5%;
+  transform: scale(-25%, -30%) rotate(180deg);
+}
+
+ h1{
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.text{
+  position: absolute;
+  margin-left: 15px;
+  padding: 2px 3px;
+  display: flex;
+}
+
+.pack-top-text{
+  height: 150px;
+  width: 150px;
+  border: 1px solid #fff;
+  margin: 5px;
+}
+
+.pack-bot-text{
+  height: 150px;
+  width: 150px;
+  border: 1px solid #fff;
+  margin: 5px;
+}
+
+.pack-img2{
+  height: 300px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  color: #fff;
+  left: 35%;
+  top: 5%;
+  transform: scale(-25%, -30%) rotate(180deg);
+}
+
+.text2{
+  position: absolute;
+  display: flex;
+  left: 38%;
+  top: 60%;
+}
+
+.pack-img3{
+  height: 300px;
+  width: 120px;
+  display: block;
+  position: absolute;
+  color: #fff;
+  left: 68%;
+  top: 5%;
+  transform: scale(-25%, -30%) rotate(180deg);
+}
+
+.text3{
+  position: absolute;
+  display: flex;
+  left: 70%;
+  top: 60%;
+}
+
+.pack-top-text:hover,.pack-bot-text:hover{
+  background: #fff;
+  color: black;
+}
+
+.footer-img{
+  margin: 4px;
+}
+
+#contact p{
+  margin: 30px auto;
+  color: #73777B;
+}
+
+@media (max-width: 992px) {
+  .header{
+    position: relative;
+    height: 500px;
+    width: 100%;
+  }
+  .header li{
+    margin: 8px;
+  }
+  #features{
+    position: relative;
+    display: block;
+    height: 600px;
+    width: 100%;
+    right: 8%;
+    margin-right: 25%;
+    align-items: center;
+  }
+  .pack-img{
+    left: -2%;
+    display: block;
+    top: 10%;
+    transform: scale(-18%,-25%) rotate(180deg);
+  }
+  .text{
+    position: absolute;
+    display: flex;
+    height: 20px;
+    width: 28%;
+    left: 1%;
+    top: 60%;
+  }
+  .pack-img2{
+    display: block;
+    left: 30%;
+    top: 10%;
+    transform: scale(-18%,-25%) rotate(180deg);
+  }
+  .text2{
+    position: absolute;
+    display: flex;
+    height: 20px;
+    width: 28%;
+    left: 35%;
+    top: 60%;
+  }
+  .pack-img3{
+    display: block;
+    left: 62%;
+    top: 10%;
+    transform: scale(-20%,-25%) rotate(180deg);
+  }
+  .text3{
+    position: absolute;
+    display: flex;
+    height: 20px;
+    width: 26%;
+    left: 68%;
+    top: 60%;
+  }
+}
